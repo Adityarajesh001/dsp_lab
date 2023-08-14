@@ -68,7 +68,7 @@ Nfft=16777216; %power of 2 and I put a huge number so there are many data point
 f=linspace(0,Fs,Nfft);
 X1=abs(fft(y,Nfft));
 figure(2);
-plot(f(1:Nfft),X1(1:Nfft))
+plot(f(1:Nfft/2),X1(1:Nfft/2))
 xlabel('Frequency'); 
 ylabel ('amp');
 title ('FFT Spectrum');
