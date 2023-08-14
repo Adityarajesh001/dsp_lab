@@ -52,10 +52,10 @@ plot(a);
 b = load('RainFallIndia_Jan.txt');
 histogram(b);
 c = load('RainFallIndia_July.txt');
-meam_jan = mean(a);
-std_jan = std(a);
-mean_july = mean(b);
-std_july  = std(b);
+meam_jan = mean(b);
+std_jan = std(b);
+mean_july = mean(c);
+std_july  = std(c);
 fs = audioread('Track001.wav');
 plot(fs)
 xlabel('Time')
